@@ -18,7 +18,7 @@ carac:=carac+1;
     UNTIL (  character = '.' )
 FOR i FROM 0 TO NB OF CHARCTER -1 DO   
 if  (sentence[i] = ' ') OR (sentence[i] = '.')
-            Read  NB_Word++;
+              NB_Word++;
 end if 
  SWITCH ( sentence[i].lowercase )
 
