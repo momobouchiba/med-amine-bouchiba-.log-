@@ -1,3 +1,17 @@
+ALGORITHM sentence_log
+var 
+  
+  character : CHAR;
+  sentence : STRING := '';
+  NB_CHARCTER : INTEGER=0
+  NB_vowels:INTEGER=0
+  NB_words : INTEGER:=0;
+ 
+  
+ 
+BEGIN  
+  REPEAT
+
 Read( character )
       sentence= sentence  + character;
 carac:=carac+1;
