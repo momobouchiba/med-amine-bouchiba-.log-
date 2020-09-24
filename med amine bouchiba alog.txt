@@ -1,48 +1,36 @@
-
-
-
-
-
-
-
-
-
-
-var 
-cont vawels , cont word  
-
-  character : CHAR;
-   sentence : STRING := '';
-BEGIN 
-
-countWord := 0;
-count carac:=0;
-    countVowels := 0;
-    REPEAT
-
 Read( character )
       sentence= sentence  + character;
 carac:=carac+1;
     UNTIL (  character = '.' )
-FOR i FROM 0 TO NB OF CHARCTER -1 DO 
-IF (sentence[i] = ' ') OR (sentence[i] = '.') THEN
-            countWord++;
+FOR i FROM 0 TO NB OF CHARCTER -1 DO   
+THEN  (sentence[i] = ' ') OR (sentence[i] = '.')
+            Read  NB_Word++;
 
- SWITCH ( sentence[i] ) DO
-            case 'a' : countVowels++; BREAK;
-            case 'e' : countVowels++; BREAK;
-            case 'i' : countVowels++; BREAK;
-            case 'o' : countVowels++; BREAK;
-            case 'u' : countVowels++; BREAK;
-            case 'y' : countVowels++; BREAK;
-            case 'A' : countVowels++; BREAK;
-            case 'E' : countVowels++; BREAK;
-            case 'I' : countVowels++; BREAK;
-            case 'O' : countVowels++; BREAK;
-            case 'U' : countVowels++; BREAK;
-            case 'Y' : countVowels++; BREAK;
+ SWITCH ( sentence[i] 
+iflowercase or upper case   ) DO
+            case 'a' : NB_Vowels++; BREAK;
+            case 'e' : NB_Vowels++; BREAK;
+            case 'i' : NB_Vowels++; BREAK;
+            case 'o' : NB_Vowels++; BREAK;
+            case 'u' : NB_Vowels++; BREAK;
+            case 'y' : NB_Vowels++; BREAK;
+            case 'A' : NB_Vowels++; BREAK;
+            case 'E' : NB_Vowels++; BREAK;
+            case 'I' : NB_Vowels++; BREAK;
+            case 'O' : NB_Vowels++; BREAK;
+            case 'U' : NB_Vowels++; BREAK;
+            case 'Y' : NB_Vowels++; BREAK;
         END_SWITCH
-END if 
-    Write('nb of charcter -1)
-    Write('The number of words in the sentence + nb of words  )
-    Write('The number of vowels in the sentence: +nb of word  )
+END_FOR 
+   
+    write ('sentence contain ',nb_words,'word,',nb_voyels,'voyelle and'nb_sentence,'.')
+
+
+
+
+
+
+
+
+
+
